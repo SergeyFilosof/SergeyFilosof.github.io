@@ -1,0 +1,63 @@
+@import "Mixin.scss";
+@import "main_style.scss";
+.page{
+display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+
+  .content{
+    .personal-area{
+      margin-top: 100px;
+      margin-bottom: 100px;
+
+      @include max-screen(830px){
+        margin-top: 90px;
+      }
+
+      .nav-item{
+        width: 30%;
+        @include max-screen(570px){
+          width: 50%;
+        }
+        .nav-link{
+          font-family: 'Ubuntu', sans-serif;
+          font-size: 20px;
+          color: #1d2124;
+          a{
+            outline: none;
+            text-decoration: none;
+          }
+          .active{
+            width: 100%;
+          }
+        }
+
+      }
+      .tab-content{
+        .tab-pane{
+          form{
+            width: 50%;
+            @include max-screen(830px){
+              width: 100%;
+            }
+            .title{
+              margin-top: 20px;
+              margin-bottom: 20px;
+              font-size: 30px;
+              font-family: 'Ubuntu', sans-serif;
+            }
+            input{
+              margin-bottom: 20px;
+            }
+            .btn{
+              background-color: $bg-color-turquoise;
+              border: 0;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

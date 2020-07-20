@@ -1,0 +1,155 @@
+@import "main_style.scss";
+.page{
+  overflow: hidden;
+  .content {
+    .carousel {
+      background-color: $bg-color-turquoise;
+      padding-top: 30px;
+      padding-bottom: 10px;
+
+      .slider {
+        .mobile {
+          display: none;
+        }
+      }
+    }
+
+    .featured-product {
+      margin: 30px auto;
+
+      .text-title {
+        font-size: 35px;
+        font-family: $font-PTsans;
+        color: $bg-color-turquoise;
+        font-weight: bolder;
+        text-align: center;
+        margin-bottom: 95px;
+      }
+
+      .text-title:before {
+        content: "";
+        display: inline-block;
+        width: 300px;
+        margin-top: 26px;
+        margin-right: 41px;
+        height: 2px;
+        background: linear-gradient(to left, #b2b4b6 0%, transparent 100%);
+      }
+
+      .text-title:after {
+        content: "";
+        display: inline-block;
+        width: 300px;
+        margin-top: 26px;
+        margin-left: 41px;
+        height: 2px;
+        background: linear-gradient(to right, #b2b4b6 0%, transparent 100%);
+      }
+    }
+
+    .product {
+      .card {
+        cursor: pointer;
+        margin-bottom: 30px;
+        border: 0;
+        padding: 8px;
+        @include max-screen(1030px){
+          padding: 9px;
+        }
+        @include max-screen(800px){
+          border: 1px solid #a5a5a5;
+        }
+        @include max-screen(550px){
+          border: 0;
+        }
+        .shell-coupons{
+          border: 1px solid #a5a5a5;
+          padding: 8px;
+          @include max-screen(800px){
+            display: flex;
+            width: 50%;
+            border: 0;
+
+          }
+          @include max-screen(550px){
+            display: block;
+            width: auto;
+            border: 1px solid #a5a5a5;
+          }
+          .btn{
+            background-color: $bg-color-turquoise;
+            width: 100px;
+            border: 0;
+            font-size: 25px;
+            @include max-screen(740px){
+              line-height: 2.5;
+              margin-right: 37px;
+            }
+            @include max-screen(330px){
+              font-size: 20px;
+              width: 80px;
+              line-height: 2.5;
+              margin-right: 20px;
+            }
+          }
+          .btn:hover{
+            background-color: #43DECE;
+          }
+          .new-price{
+            font-family: $font-PTsans;
+            font-weight: bolder;
+            font-size: 30px;
+            color: #1c7430;
+          }
+          .old-price{
+            text-decoration: line-through;
+            font-family: $font-PTsans;
+            font-weight: bolder;
+            color: red;
+
+          }
+        }
+        .shell-coupons:hover{
+          -webkit-box-shadow: 1px 1px 10px 0 #454545;
+          box-shadow: 1px 1px 10px 0 #454545;
+        }
+      }
+
+    }
+
+    @include max-screen(800px) {
+      padding-top: 80px;
+    }
+    @include max-screen(550px) {
+      padding-top: 65px;
+      .carousel {
+        .slider {
+          .desktop {
+            display: none;
+          }
+
+          .mobile {
+            display: inline-block;
+          }
+        }
+      }
+
+    }
+    .show-inner{
+      margin-bottom: 100px;
+      h2{
+        font-size: 30px;
+        font-family: 'Ubuntu', sans-serif;
+        color: $bg-color-turquoise;
+      }
+      p{
+        color: #4e555b;
+        font-family:$font-PTsans;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+

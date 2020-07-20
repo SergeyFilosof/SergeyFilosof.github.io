@@ -1,0 +1,82 @@
+@import "Mixin.scss";
+@import "main_style.scss";
+.page{
+
+
+  .content{
+    .cart{
+      .cart-title{
+        border-bottom: 1px solid #c6c8ca;
+        margin-bottom: 20px;
+          .item{
+            margin-left: 50px;
+            font-family: "PT Sans", sans-serif;
+            color: #4e555b;
+          }
+        .item:nth-child(1){
+          margin-left: 0;
+        }
+      }
+      .more-details{
+        .image{
+          img{
+            width: 35%;
+          }
+          .description{
+            padding-top: 80px;
+            padding-left: 50px;
+            .title{
+              font-family: "PT Sans", sans-serif;
+              color: #4e555b;
+              font-size: 20px;
+              font-weight: 600;
+            }
+            p{
+              font-family: "PT Sans", sans-serif;
+              color: #4e555b;
+            }
+          }
+        }
+        .product-price{
+          padding-top: 100px;
+          .item{
+            color: #4e555b;
+            font-weight: 600;
+            font-size: 20px;
+            margin-left: 25px;
+            margin-top: 50px;
+          }
+          span:nth-child(2){
+            margin-left: 5px;
+          }
+          .old-price{
+            text-decoration: line-through;
+            font-family: "PT Sans", sans-serif;
+            color: #4e555b;
+            font-weight: 600;
+            font-size: 15px;
+          }
+          input{
+            width: 20%;
+            margin-left: 30px;
+          }
+        }
+
+      }
+      .buttons{
+        margin-bottom: 60px;
+        .btn{
+background-color: $bg-color-turquoise;
+          a{
+            color: #FFFFFF;
+            outline: none;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+
+
+  }
+}
